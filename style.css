@@ -1,0 +1,27 @@
+.welcome {
+    color: green;
+    font-size: 24px;
+    background-color: black;
+    
+}
+#server-ip {
+    color: red;
+    font-size: 16;
+    background-color: black;
+}
+p.info {
+    color: blue
+}
+h1 {
+    font-size: 50px;
+    color: green;
+}
+.info {
+    color: orange;
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+}
