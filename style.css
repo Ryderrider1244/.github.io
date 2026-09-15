@@ -22,6 +22,16 @@ body {
 
 }
 
+nav{
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 2em;
+}
 
 
 
