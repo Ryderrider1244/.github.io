@@ -65,6 +65,7 @@ header img {
 }
 .text-con {
     flex: 0 1 34em;
+
 }
 .cta {
     display: inline-block;
@@ -86,18 +87,49 @@ h1 {
     font-size: 3em;
 
 }
-.info_con {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-
-
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
 }
-.infobox {
-    width: 100px;
-    height: 50px;
-    background-color: green;
+h3 {
+    font-size: 2em;
+}
+.info-flex {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
 }
+
+
+.infobox {
+    color: var(--base-color);
+    background-color: white;
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+iframe {
+    flex: 0 1 420px;
+    max-width: 100%;
+}
+section {
+    padding: 3em min(2em, 15%);
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.25em;
+}
+.discta {
+    color: #7289DA;
+    text-decoration: none;
+}
+.discta:hover {
+    text-decoration: underline;
+}
+/* 松山MC伺服器(Java) */
