@@ -66,9 +66,18 @@ header img {
 .text-con {
     flex: 0 1 34em;
 }
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--base-color);
+    background-color: white;
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
 .welcome {
-    margin: .75em 0 1em 0;
-    font-size: 2em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
 }
 .green {
     color: var(--primary-color)
