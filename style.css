@@ -56,7 +56,6 @@ header, section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 3em;
-    flex-shrink:0;
 }
 img {
     border-radius: 1em;
