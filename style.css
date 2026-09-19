@@ -141,11 +141,8 @@ h4 {
     }
 }
 @media (max-width: 640px){ 
-     nav ul {
+     nav li:not(:first-child):not(:last-child) {
         display: none;
-    }
-    nav li:first-child, nav li:last-child {
-        display: block
     }
     header {
         margin-top: 0;
