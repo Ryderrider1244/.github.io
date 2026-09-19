@@ -57,14 +57,14 @@ header, section {
     flex-wrap: wrap;
     gap: 3em;
 }
-header img {
+img {
     border-radius: 1em;
     max-width: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 .text-con {
-    flex: 0 1 22em;
+    flex: 0 0 22em;
 
 }
 .cta {
