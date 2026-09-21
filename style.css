@@ -43,6 +43,12 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+.headertext-con {
+   flex: 0 1 54em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 header, section {
     margin: 2em auto;
     width: min(95em, 100%);
@@ -50,6 +56,18 @@ header, section {
     background-color: var(--color1);
     border-radius: 1em;
 }           
+header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/pine forest mc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header .flex-con {
+    flex: 1;
+    min-height: 70vh;
+}
 .flex-con {
     display: flex;
     align-items: center;
@@ -65,26 +83,29 @@ img {
 }
 .text-con {
     flex: 0 1 22em;
-
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
 }
 .cta {
     display: inline-block;
     text-decoration: none;
     color: var(--base-color);
-    background-color: white;
+    background-color: #7289DA;
     padding: .75em 1.25em;
     border-radius: .5em;
     font-weight: 600;
 }
 .welcome {
     margin-bottom: .5em;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .green {
     color: var(--primary-color)
 }
 h1 {
-    font-size: 3em;
+    font-size: 5em;
 
 }
 h2 {
@@ -97,12 +118,10 @@ h3 {
 }
 .info-flex {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 3em;
+    gap: 1em;
     flex-wrap: wrap;
 }
-
 
 .infobox {
     color: var(--base-color);
