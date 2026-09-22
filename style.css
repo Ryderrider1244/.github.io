@@ -25,7 +25,7 @@ body {
 
 nav {
     margin: 0em auto 3em auto;
-    width: min(95em, 100%);
+    width: min(100em, 100%);
 }
 nav ul {
   display: flex;
@@ -51,7 +51,7 @@ nav a:hover {
 }
 header, section {
     margin: 2em auto;
-    width: min(95em, 100%);
+    width: min(100em, 100%);
     padding: min(2em, 15%);
     background-color: var(--color1);
     border-radius: 1em;
@@ -85,9 +85,10 @@ img {
     flex: 0 1 22em;
     flex-direction: column;
     display: flex;
-    text-align: left;
     align-items: flex-start;
+    text-align: left;
 }
+
 .cta {
     display: inline-block;
     text-decoration: none;
@@ -135,12 +136,10 @@ iframe {
     max-width: 100%;
 }
 section {
-    padding: 3em min(2em, 15%);
-    text-align: center;
+    padding: 3em min(2em, 15%); 
 }
 
 section p {
-    text-align: center;
     margin-top: 1em;
     font-size: 1.25em;
 }
@@ -152,6 +151,9 @@ section p {
     text-decoration: underline;
 }
 h4 {
+    font-size: 2em;
+}
+h5 {
     font-size: 2em;
 }
 @media (max-width: 988px){ 
