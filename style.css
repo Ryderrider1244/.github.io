@@ -1,7 +1,7 @@
 :root {
     --base-color: #1c1d22;
     --text-color: #D3D3D3;
-    --primary-color: green;
+    --primary-color: #5DC714;
     --secondary-color: rgba(128, 128, 128, 0.25);
     --color1: #23272A;
 }
@@ -125,8 +125,11 @@ h3 {
 }
 
 .infobox {
-    color: var(--base-color);
-    background-color: white;
+    color: rgba(255, 255, 255, 0.7);
+    background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.7) 100%);
     padding: .75em 1.25em;
     border-radius: .5em;
     font-weight: 600;
