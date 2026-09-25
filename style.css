@@ -4,16 +4,29 @@
     --primary-color: #5DC714;
     --secondary-color: rgba(128, 128, 128, 0.25);
     --color1: #23272A;
+    --mcseven: "Minecraft Seven", ui-monospace, monospace;
+    --mcten: "Minecraft Ten", ui-monospace, monospace;
+    --mccubic: "Minecraft Cubic","Noto Sans TC", sans-serif;
 }
-
-
+@font-face {
+  font-family: "Minecraft Ten";
+  src: url("fonts/Minecraft-Tenv2.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Minecraft Seven";
+  src: url("fonts/Minecraft-Seven_v2.woff") format("woff");
+}
+@font-face {
+  font-family: "Minecraft Cubic";
+  src: url("fonts/Cubic_11.ttf") format("truetype");
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html {
-    font-family: Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-family: var(--mccubic), var(--mcseven), var(--mcten), ui-monospace, monospace;
     color: var(--text-color)
 }
 
@@ -101,13 +114,14 @@ img {
 .welcome {
     margin-bottom: .5em;
     font-size: 2em;
+    margin-top: 1em;
 }
 .green {
     color: var(--primary-color)
 }
 h1 {
     font-size: 5em;
-
+    
 }
 h2 {
     text-align: center;
@@ -125,6 +139,7 @@ h3 {
 }
 
 .infobox {
+    font-family: var(--mccubic), ui-monospace, monospace;
     color: rgba(255, 255, 255, 0.7);
     background: radial-gradient(
     ellipse at center,
