@@ -25,74 +25,86 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    font-family: var(--mccubic), var(--mcseven), var(--mcten), ui-monospace, monospace;
-    color: var(--text-color)
-}
 
 body {
     background-color: var(--base-color);
-    padding: 1em;
-
+    font-family: var(--mccubic), var(--mcseven), var(--mcten), ui-monospace, monospace;
+    color: var(--text-color)
 }
+.navbar {
+    background: #23272A;
 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 nav {
-    margin: 0em auto 3em auto;
-    width: min(100em, 100%);
-}
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  gap: 2em;
-}
-nav li:first-child {
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    min-height: 70px;
 }
 nav a {
+    color: white;
     text-decoration: none;
-    color: var(--text-color );
 }
-nav a:hover {
-    text-decoration: underline;
+.logo {
+    margin-right: 40px;
 }
-.headertext-con {
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.icon {
    flex: 0 1 54em;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-header, section {
-    margin: 2em auto;
-    width: min(100em, 100%);
-    padding: min(2em, 15%);
-    background-color: var(--color1);
-    border-radius: 1em;
-}           
-header {
+           
+.hero {
+    height: calc(100vh - 70px);
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("images/pine forest mc.jpg");
+    linear-gradient(
+     to bottom,
+     rgba(28, 29, 34, 0.25) 25%,
+     rgba(28, 29, 34, 0.7) 50%,
+    rgba(28, 29, 34, 1) 100%
+        
+        ),
+        url("images/pine\ forest\ mc.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-header .flex-con {
-    flex: 1;
-    min-height: 70vh;
-}
-.flex-con {
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 3em;
 }
-img {
-    border-radius: 1em;
-    max-width: 100%;
-    object-fit: cover;
-    object-position: bottom;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+.hero-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .text-con {
     flex: 0 1 22em;
@@ -111,17 +123,16 @@ img {
     border-radius: .5em;
     font-weight: 600;
 }
-.welcome {
+h1, p {
     margin-bottom: .5em;
-    font-size: 2em;
-    margin-top: 1em;
+    font-size: 2em; 
+    margin-top: 5px;
 }
 .green {
     color: var(--primary-color)
 }
 h1 {
-    font-size: 5em;
-    
+    font-size: 7em;
 }
 h2 {
     text-align: center;
@@ -131,13 +142,12 @@ h2 {
 h3 {
     font-size: 2em;
 }
-.info-flex {
+.info {
     display: flex;
     justify-content: center;
     gap: 1em;
     flex-wrap: wrap;
 }
-
 .infobox {
     font-family: var(--mccubic), ui-monospace, monospace;
     color: rgba(255, 255, 255, 0.7);
@@ -149,15 +159,21 @@ h3 {
     border-radius: .5em;
     font-weight: 600;
 }
+img {
+    border-radius: 5px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
 iframe {
     flex: 0 1 420px;
     max-width: 100%;
 }
-section {
-    padding: 3em min(2em, 15%); 
+.information {
+    background-color: var(--color1);
 }
 
-section p {
+.information p {
     margin-top: 1em;
     font-size: 1.25em;
 }

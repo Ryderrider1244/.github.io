@@ -7,41 +7,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body> 
-    <header>
+    <header class="navbar">
+    <div class="container">
         <nav>
-            <ul>
-                <li><a href="index.html" class="nav">主頁</a></li>
-                <li><a href="#h4" class="nav">關於</a></li>
-                <li><a href="#h5" class="nav">規則</a></li>
-                <li><a href="#h3" class="nav">加入</a></li>
-            </ul>
+            <a href="#" class="logo"><span class="green">SSSH</span> SMP</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Server</a>
+                <a href="#">Seasons</a>
+                <a href="#">Rules</a>
+            </div>
+            <div class="nav-right">
+                <a href="#">Discord</a>
+                <span>PLAY.SSSH.NET</span>
+            </div>
         </nav>
-        <div class="flex-con">
-            <div class="headertext-con">
-                <h1><ruby><span class="green">SSSH </span><rt>松山<span class="green">高中</span></rt></ruby><ruby>SMP<rt>MC伺服</rt></ruby></h1>
-                <p class="welcome">"有溫度的幸福伺服器"</p>
+    </div>
+</header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-con">
+                <div class="icon">
+                    <h1><ruby><span class="green">SSSH </span><rt>松山<span class="green">高中</span></rt></ruby><ruby>SMP<rt>MC伺服</rt></ruby></h1>
+                    <p>"有溫度的幸福伺服器"</p>
+                </div>
             </div>
-            <div class="info-flex"> 
-                <button class="infobox">IP: example 版本: 26.2 狀態: 線上</button>
-                <a href="https://discord.gg/jTEBhDvD4" class="cta"target="_blank"> <i class="fab fa-discord"></i> Discord</a>
+            <div class="info"> 
+                    <button class="infobox">IP: example 版本: 26.2 狀態: 線上</button>
+                    <a href="https://discord.gg/jTEBhDvD4" class="cta"target="_blank"> <i class="fab fa-discord"></i> Discord</a>
             </div>
-         
         </div>
-    </header>
-    <section>
-        <div class="flex-con">
+    </section>    
+    <section class="information">
+        <div class="container">
             <div class="text-con">
                 <h3  id="h3">加入伺服器前</h3>
                 <p>請先下載ZeroTier VPN才能加入伺服器<br /><br />邀請還未被接受前不會看到Alex<br>
-                代碼不時更新 請洽<a href="https://discord.gg/jTEBhDvD4" class="discta"
-target="_blank"> Discord</a></p>
+                代碼不時更新 請洽<a href="https://discord.gg/jTEBhDvD4" class="discta"target="_blank"> Discord</a></p>
             </div>
             <iframe width="420" height="315" src="https://www.youtube.com/embed/yB3dwy-IKpM" title="YouTube video player" allowfullscreen>
             </iframe>  
         </div>
     </section>
     <section>
-        <div class="flex-con">
+        <div class="container">
             <div class="text-con">
                 <h4 id="h4">關於</h4>
                 <p><strong>季節性主題</strong></p>
@@ -53,7 +62,7 @@ target="_blank"> Discord</a></p>
         </div>
     </section>
     <section>
-        <div class="flex-con">
+        <div class="container">
             <div class="text-con">
                 <h5 id="h5">規則</h5>
                 <p></p>
