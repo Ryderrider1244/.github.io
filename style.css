@@ -5,6 +5,7 @@
     --secondary-color: rgba(128, 128, 128, 0.25);
     --color1: #23272A;
     --dis-color: #7289DA;
+    --scarlet: #E63946;
     --mcseven: "Minecraft Seven", ui-monospace, monospace;
     --mcten: "Minecraft Ten", ui-monospace, monospace;
     --mccubic: "Minecraft Cubic","Noto Sans TC", sans-serif;
@@ -33,7 +34,7 @@ body {
     color: var(--text-color)
 }
 .navbar {
-    background: #23272A;
+    background: var(--base-color);
 
     position: sticky;
     top: 0;
@@ -50,6 +51,7 @@ nav a {
 }
 .logo {
     margin-right: 40px;
+    text-align: center;
 }
 .nav-links {
     display: flex;
@@ -61,11 +63,6 @@ nav a {
     display: flex;
     align-items: center;
     gap: 25px;
-}
-.icon {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 }
            
 .hero {
@@ -114,6 +111,18 @@ nav a {
     justify-content: center;
     margin: auto 0;
 }
+.join {
+    font-size: 1.5em;
+    margin-top: 1em;
+    padding: .6em 1em;
+
+    text-decoration: none;
+    color: white;
+    background-color: var(--scarlet);
+
+    border-radius: .5em;
+    font-weight: 600;
+}
 .text-con {
     flex: 0 1 22em;
     flex-direction: column;
@@ -133,6 +142,7 @@ nav a {
 }
 h1 + p {
     font-size: 2em; 
+    margin-top: .5em;
 }
 h1 {
     font-size: 7em;
