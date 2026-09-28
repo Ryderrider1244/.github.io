@@ -4,6 +4,7 @@
     --primary-color: #5DC714;
     --secondary-color: rgba(128, 128, 128, 0.25);
     --color1: #23272A;
+    --dis-color: #7289DA;
     --mcseven: "Minecraft Seven", ui-monospace, monospace;
     --mcten: "Minecraft Ten", ui-monospace, monospace;
     --mccubic: "Minecraft Cubic","Noto Sans TC", sans-serif;
@@ -62,7 +63,6 @@ nav a {
     gap: 25px;
 }
 .icon {
-   flex: 0 1 54em;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -76,7 +76,6 @@ nav a {
      rgba(28, 29, 34, 0.25) 25%,
      rgba(28, 29, 34, 0.7) 50%,
     rgba(28, 29, 34, 1) 100%
-        
         ),
         url("images/pine\ forest\ mc.jpg");
     background-size: cover;
@@ -87,24 +86,33 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
     width: 100%;
+    
 }
 .hero-con {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 .icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto 0;
 }
 .text-con {
     flex: 0 1 22em;
@@ -123,13 +131,8 @@ nav a {
     border-radius: .5em;
     font-weight: 600;
 }
-h1, p {
-    margin-bottom: .5em;
+h1 + p {
     font-size: 2em; 
-    margin-top: 5px;
-}
-.green {
-    color: var(--primary-color)
 }
 h1 {
     font-size: 7em;
@@ -142,22 +145,62 @@ h2 {
 h3 {
     font-size: 2em;
 }
-.info {
+.infocards {
     display: flex;
     justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    width: 100%;
 }
-.infobox {
-    font-family: var(--mccubic), ui-monospace, monospace;
+.infocard {
+    font-family: "Noto Sans TC", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     background: radial-gradient(
     ellipse at center,
     rgba(0, 0, 0, 0.35) 0%,
     rgba(0, 0, 0, 0.7) 100%);
+
     padding: .75em 1.25em;
     border-radius: .5em;
     font-weight: 600;
+    border: 1px solid var(--primary-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex: 1;
+}
+.card-icon {
+    font-size: 40px;
+    padding-right: .75em;    
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+.card-head {
+    font-family: var(--mccubic);
+    font-size: 25px;
+    font-weight: 600;
+}
+.card-subhead {
+    font-family: var(--mccubic);
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: .5em;
+}
+.infocard#social {
+    border: 1px solid var(--dis-color);
+}
+.infocard#social, .infocard#copy, .join {
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.infocard#social:hover, .infocard#copy:hover, .join:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 img {
     border-radius: 5px;
@@ -189,6 +232,9 @@ h4 {
 }
 h5 {
     font-size: 2em;
+}
+.green {
+    color: var(--primary-color)
 }
 @media (max-width: 988px){ 
     header{
