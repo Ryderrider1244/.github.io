@@ -114,7 +114,7 @@ nav a {
 }
 .join {
     font-size: 1.5em;
-    margin-top: 1em;
+    margin: 1em auto;
     padding: .6em 1em;
 
     text-decoration: none;
@@ -123,13 +123,6 @@ nav a {
 
     border-radius: .5em;
     font-weight: 600;
-}
-.text-con {
-    flex: 0 1 22em;
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
 }
 
 .cta {
@@ -147,14 +140,6 @@ h1 + p {
 }
 h1 {
     font-size: 7em;
-}
-h2 {
-    text-align: center;
-    margin-bottom: 1em;
-    font-size: 2em;
-}
-h3 {
-    font-size: 2em;
 }
 .infocards {
     display: flex;
@@ -215,22 +200,56 @@ h3 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 img {
-    border-radius: 5px;
-    max-width: 100%;
+    border-radius: 80%;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     object-position: bottom;
+}
+h2, h3 {
+    margin: auto auto 1em auto;
+    font-size: 2em;
 }
 iframe {
     flex: 0 1 420px;
     max-width: 100%;
 }
-.information {
-    background-color: var(--color1);
+.info#about .content-con {
+    flex: 1 1 35em;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 4em;
 }
+.info#about .text-con {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+}
+.info-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.information p {
-    margin-top: 1em;
-    font-size: 1.25em;
+}
+.info#about {
+    background-color: var(--base-color);
+    padding: 3em 0;
+}
+.info#before {
+    background-color: var(--color1);
+    padding: 3em 0;
+}
+.info#before .content-con {
+    flex: 1 1 20em;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 4em;
 }
 .discta {
     color: #7289DA;
@@ -254,9 +273,7 @@ h5 {
     }
 }
 @media (max-width: 640px){ 
-     nav li:not(:first-child):not(:last-child) {
-        display: none;
-    }
+
     header {
         margin-top: 0;
     
