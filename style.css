@@ -33,6 +33,41 @@ body {
     font-family: var(--mccubic), var(--mcseven), var(--mcten), ui-monospace, monospace;
     color: var(--text-color)
 }
+.ham-icon {
+    padding-right: 30px;
+    font-size: 20px;
+}
+.off-screen-menu {
+    background: var(--base-color);
+    height: 100vh;
+    width: 100%;
+    max-width: 260px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    transition: .3 ease;
+}
+.off-screen-menu.active{
+    right: 0;
+}
+
+.off-screen-menu li {
+    list-style-type: none;
+    padding: 5px 10px;
+}
+.off-screen-menu a {
+    color: white;
+    text-decoration: none;
+}
+.off-screen-menu a:hover {
+    color: var(--scarlet);
+}
 .navbar {
     background: var(--base-color);
 
@@ -190,11 +225,11 @@ h1 {
 .infocard#social {
     border: 1px solid var(--dis-color);
 }
-.infocard#social, .infocard#copy, .join {
+.infocard#social, .infocard#copyIP, .join {
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.infocard#social:hover, .infocard#copy:hover, .join:hover {
+.infocard#social:hover, .infocard#copyIP:hover, .join:hover {
 
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -267,21 +302,17 @@ h5 {
 .green {
     color: var(--primary-color)
 }
-@media (max-width: 988px){ 
-    header{
-        text-align: center;
-    }
-}
-@media (max-width: 640px){ 
 
-    header {
-        margin-top: 0;
+@media (max-width: 640px){ 
+    .nav-links, .nav-ip {
+        display: none;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    h1 + p {
+        font-size: 1.5em;
+    }
     
-    }
-    .cta {
-        width: 100%;
-    }
-    .text-con {
-        font-size: 1em;
-    }
+
 }

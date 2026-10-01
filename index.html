@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body> 
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href="#">主頁</a></li>
+            <li><a href="#">加入</a></li>
+            <li><a href="#">介紹</a></li>
+            <li><a href="#">規則</a></li>
+        </ul>
+    </div>
     <header class="navbar">
         <div class="container">
             <nav>
+                <span class="ham-icon"><i class="fa-solid fa-bars"></i></span>
                 <a href="#" class="logo"><span class="green">SSSH</span> <br> SMP</a>
                 <div class="nav-links">
                     <a href="#">主頁</a>
@@ -19,7 +28,7 @@
                 </div>
                 <div class="nav-right">
                     <a href="https://discord.gg/sND9eqHQZh">Discord</a>
-                    <span>PLAY.SSSH.NET</span>
+                    <span class="nav-ip">Copy IP</span>
                 </div>
             </nav>
         </div>
@@ -40,7 +49,7 @@
                             <span class="card-head">67 在線</span>
                         </div>
                     </div>
-                    <div class="infocard" id="copy">
+                    <div class="infocard" id="copyIP">
                         <span class="card-icon">IP</span>
                         <div class="card-text">
                             <span class="card-subhead">26.2</span>  
