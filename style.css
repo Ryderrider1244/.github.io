@@ -52,6 +52,7 @@ body {
     text-align: center;
     font-size: 3em;
     transition: .3 ease;
+    z-index: 2000;
 }
 .off-screen-menu.active{
     right: 0;
